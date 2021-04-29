@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3000 1800 3000 1900
+Wire Wire Line
+	2850 1800 3000 1800
+Wire Wire Line
+	2100 1800 2650 1800
+$Comp
+L Device:R_Small R2
+U 1 1 60805E76
+P 2750 1800
+F 0 "R2" V 2554 1800 50  0000 C CNN
+F 1 "47k" V 2645 1800 50  0000 C CNN
+F 2 "" H 2750 1800 50  0001 C CNN
+F 3 "~" H 2750 1800 50  0001 C CNN
+	1    2750 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2100 3300 2250
+$Comp
+L power:GND #PWR05
+U 1 1 60805794
+P 3300 2250
+F 0 "#PWR05" H 3300 2000 50  0001 C CNN
+F 1 "GND" H 3305 2077 50  0000 C CNN
+F 2 "" H 3300 2250 50  0001 C CNN
+F 3 "" H 3300 2250 50  0001 C CNN
+	1    3300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1250 3300 1400
+Connection ~ 3300 1250
+Wire Wire Line
+	3150 1250 3150 1200
+Wire Wire Line
+	3300 1250 3150 1250
+Wire Wire Line
+	3300 1000 3300 1050
+Connection ~ 3300 1000
+Wire Wire Line
+	3300 1000 3150 1000
+Wire Wire Line
+	3300 1150 3300 1250
+Wire Wire Line
+	3300 950  3300 1000
+$Comp
+L Device:Speaker LS1
+U 1 1 607F7164
+P 3500 1050
+F 0 "LS1" H 3670 1046 50  0000 L CNN
+F 1 "Speaker" H 3670 955 50  0000 L CNN
+F 2 "" H 3500 850 50  0001 C CNN
+F 3 "~" H 3490 1000 50  0001 C CNN
+	1    3500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1600 3300 1700
+$Comp
+L power:+5V #PWR04
+U 1 1 60802673
+P 3300 950
+F 0 "#PWR04" H 3300 800 50  0001 C CNN
+F 1 "+5V" H 3315 1123 50  0000 C CNN
+F 2 "" H 3300 950 50  0001 C CNN
+F 3 "" H 3300 950 50  0001 C CNN
+	1    3300 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 1050
+Wire Wire Line
+	2400 1050 2400 950 
+$Comp
+L power:+5V #PWR01
+U 1 1 608021D7
+P 1700 1050
+F 0 "#PWR01" H 1700 900 50  0001 C CNN
+F 1 "+5V" H 1715 1223 50  0000 C CNN
+F 2 "" H 1700 1050 50  0001 C CNN
+F 3 "" H 1700 1050 50  0001 C CNN
+	1    1700 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D1
+U 1 1 60801225
+P 3150 1100
+F 0 "D1" V 3050 1000 50  0000 L CNN
+F 1 "D_Small" V 3200 1150 50  0001 L CNN
+F 2 "" V 3150 1100 50  0001 C CNN
+F 3 "~" V 3150 1100 50  0001 C CNN
+	1    3150 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 607FF497
+P 3300 1500
+F 0 "R3" H 3359 1546 50  0000 L CNN
+F 1 "1k" H 3359 1455 50  0000 L CNN
+F 2 "" H 3300 1500 50  0001 C CNN
+F 3 "~" H 3300 1500 50  0001 C CNN
+	1    3300 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 1500
+Wire Wire Line
+	2400 1700 2100 1700
+Wire Wire Line
+	2400 1500 2400 1700
+Wire Wire Line
+	2650 1500 2650 1400
+Wire Wire Line
+	2400 1500 2650 1500
+Wire Wire Line
+	2400 1400 2400 1500
+Wire Wire Line
+	2400 1200 2400 1050
+Wire Wire Line
+	2650 1050 2400 1050
+Wire Wire Line
+	2650 1200 2650 1050
+$Comp
+L Device:R_Small R1
+U 1 1 607FBC5E
+P 2400 1300
+F 0 "R1" H 2459 1346 50  0000 L CNN
+F 1 "2M" H 2459 1255 50  0000 L CNN
+F 2 "" H 2400 1300 50  0001 C CNN
+F 3 "~" H 2400 1300 50  0001 C CNN
+	1    2400 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1050 1700 1400
+Wire Wire Line
+	1700 2200 1700 2350
+$Comp
+L power:GND #PWR02
+U 1 1 607FA69D
+P 1700 2350
+F 0 "#PWR02" H 1700 2100 50  0001 C CNN
+F 1 "GND" H 1705 2177 50  0000 C CNN
+F 2 "" H 1700 2350 50  0001 C CNN
+F 3 "" H 1700 2350 50  0001 C CNN
+	1    1700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 607F9FB6
+P 2400 950
+F 0 "#PWR03" H 2400 800 50  0001 C CNN
+F 1 "+5V" H 2415 1123 50  0000 C CNN
+F 2 "" H 2400 950 50  0001 C CNN
+F 3 "" H 2400 950 50  0001 C CNN
+	1    2400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM8:STM8S001J3M U1
+U 1 1 607F93A4
+P 1700 1800
+F 0 "U1" H 1850 2300 50  0000 C CNN
+F 1 "STM8S" H 1900 2200 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 1750 2350 50  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm8s001j3.pdf" H 1600 1900 50  0001 C CNN
+	1    1700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 607F79F7
+P 3200 1900
+F 0 "Q1" H 3391 1946 50  0000 L CNN
+F 1 "BC547" H 3391 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3400 1825 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3200 1900 50  0001 L CNN
+	1    3200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 607F55D5
+P 2750 1300
+F 0 "BZ1" H 2902 1329 50  0000 L CNN
+F 1 "Piezo" H 2902 1238 50  0000 L CNN
+F 2 "" V 2725 1400 50  0001 C CNN
+F 3 "~" V 2725 1400 50  0001 C CNN
+	1    2750 1300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
